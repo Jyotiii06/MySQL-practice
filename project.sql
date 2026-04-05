@@ -33,13 +33,11 @@ SELECT e.name, e.department, p.project_name
 FROM employees e
 JOIN projects p ON e.emp_id = p.emp_id;
 
--- View Example
 CREATE VIEW employee_projects AS
 SELECT e.name, p.project_name
 FROM employees e
 JOIN projects p ON e.emp_id = p.emp_id;
 
--- Procedure Example
 DELIMITER //
 CREATE PROCEDURE GetEmployees()
 BEGIN
@@ -47,5 +45,4 @@ BEGIN
 END //
 DELIMITER ;
 
--- Call Procedure
 CALL GetEmployees();
