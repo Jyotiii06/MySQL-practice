@@ -28,7 +28,7 @@ INSERT INTO projects (project_name, emp_id) VALUES
 ('Recruitment Drive', 2),
 ('Budget Planning', 3);
 
--- JOIN Query
+
 SELECT e.name, e.department, p.project_name
 FROM employees e
 JOIN projects p ON e.emp_id = p.emp_id;
