@@ -1,10 +1,6 @@
--- Create Database
 CREATE DATABASE company_db;
-
--- Use Database
 USE company_db;
 
--- Create Employees Table
 CREATE TABLE employees (
     emp_id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100),
@@ -13,13 +9,12 @@ CREATE TABLE employees (
     join_date DATE
 );
 
--- Insert Data
 INSERT INTO employees (name, department, salary, join_date) VALUES
 ('Amit Sharma', 'IT', 60000, '2023-01-15'),
 ('Neha Verma', 'HR', 45000, '2022-11-10'),
 ('Raj Patel', 'Finance', 55000, '2023-03-20');
 
--- Create Projects Table
+
 CREATE TABLE projects (
     project_id INT PRIMARY KEY AUTO_INCREMENT,
     project_name VARCHAR(100),
