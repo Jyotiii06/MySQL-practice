@@ -22,7 +22,7 @@ CREATE TABLE projects (
     FOREIGN KEY (emp_id) REFERENCES employees(emp_id)
 );
 
--- Insert Project Data
+
 INSERT INTO projects (project_name, emp_id) VALUES
 ('Website Development', 1),
 ('Recruitment Drive', 2),
