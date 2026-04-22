@@ -38,11 +38,10 @@ SELECT e.name, p.project_name
 FROM employees e
 JOIN projects p ON e.emp_id = p.emp_id;
 
-DELIMITER //
 CREATE PROCEDURE GetEmployees()
 BEGIN
     SELECT * FROM employees;
-END //
+
 DELIMITER ;
 
 CALL GetEmployees();
