@@ -15,5 +15,7 @@ insert into expenses(title,amount,category,date)values
 ("Movie",300,"Entertainment","2026-04-16"),
 ("Book",199,"Study","2026-04-17"),
 ("Lip Balm",200,"Cosmetics","2026-04-18");
+("Pizza",600,"Food","2026-04-19");
+
 
 select * from expenses;
